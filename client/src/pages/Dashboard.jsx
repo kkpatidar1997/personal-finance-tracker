@@ -41,7 +41,13 @@ const Dashboard = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2">
-            <TransactionList token={token} />
+            {/* <TransactionList token={token} /> */}
+            {/* <TransactionList token={token} transactions={transactions} /> */}
+            <TransactionList
+  transactions={transactions}
+  setTransactions={setTransactions}
+  token={token}
+/>
           </div>
           <div className="space-y-6">
             <ExpensePieChart transactions={transactions} />

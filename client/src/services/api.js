@@ -25,7 +25,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api', // Change if your backend is hosted elsewhere
+  baseURL: ' https://personal-finance-tracker-1-wtpn.onrender.com/api', // Change if your backend is hosted elsewhere
 });
 
 // Register user
