@@ -1,0 +1,38 @@
+# Dependencies
+/node_modules
+
+# Build output
+/dist
+/build
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files
+.env
+.env.*.local
+.env.local
+
+# Vite or CRA cache
+.vite
+.cache
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Mac or Linux swap files
+*.swp
+
+# Optional: if you're using Tailwind CSS with JIT or watch mode
+.tailwind.config.js
+.postcss.config.js
