@@ -193,21 +193,6 @@ const TransactionList = ({ transactions, setTransactions, token }) => {
     return transactions.filter((tx) => tx.type?.toLowerCase() === filterType.toLowerCase());
   }, [filterType, transactions]);
 
-  const handleEmailExport = async () => {
-    try {
-      const res = await fetch('/api/email-transactions', {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-      const result = await res.json();
-      alert(result.message);
-    } catch (err) {
-      console.error('Failed to send email:', err);
-      alert('Error sending transaction email');
-    }
-  };
   
 
   return (
@@ -257,12 +242,7 @@ const TransactionList = ({ transactions, setTransactions, token }) => {
 
 
       )}
-      <button
-  onClick={handleEmailExport}
-  className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
->
-  Email Transaction List
-</button>
+    
 
     </div>
   );
